@@ -117,6 +117,7 @@ nav{
     width: 100%;
     height: 100vh;
     background-color: #7510F7;
+  
 }
 .div-iconomaxi{
     width: 100%;
@@ -168,11 +169,7 @@ nav{
     padding-bottom: 0;
     width: 80%;
 }
-.section2{
-    width: 100%;
-    height: 50vh;
 
-}
 
 .iconos{
     background-color: #7510F7;
@@ -180,6 +177,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
     
 }
 
