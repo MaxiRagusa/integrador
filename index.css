@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    
+    width: 100%;
+    height: 90vh;
+    background-image: url(./imagenes/fondo1.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgba(4, 28, 160, 0.726);
+    transition: .3s;   
+
+}
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+.banner-text{
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+.banner-text h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 1000;
+}
+.button1{
+    margin-right: 40px;
+    padding: 10px 35px;
+    background-color:rgb(248, 8, 8) ;
+    color: #fff;
+    border-radius: 8px;
+}
+.button1:hover{
+    background-color: #fff;
+    color:rgb(248, 8, 8);
+    transition: .5s;
+}
+.button2{
+    margin-right: 40px;
+    padding: 10px 35px;
+    background-color:#fff;
+    color: rgb(248, 8, 8);
+    border-radius: 8px;
+}
+.button2:hover{
+    background-color:rgb(248, 8, 8);
+    color:#fff;
+    transition: .5s;
+}
+
+
+
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-color: #7510F7;
+}
+.div-iconomaxi{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 100px 0;
+    padding-top: 50px;
+    background-color: #fff;
+}
+.icono-maxi{
+    width: 250px;
+    height: 240px;
+    border-radius: 50%;
+    box-shadow: -1px -1px 38px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: -1px -1px 38px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: -1px -1px 38px 1px rgba(0,0,0,0.45);
+}
+.section1 h2{
+    text-align: center;
+}
+.div-h2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.h2-hola{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 0 80px 0;
+    font-size: 2.5vw;
+    font-weight: 800;
+    width: 90%;
+  
+    
+}
+.h2-estudio{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 0 0 0;
+    font-size: 2vw;
+    font-weight: 800;
+    padding-bottom: 0;
+    width: 80%;
+}
+.section2{
+    width: 100%;
+    height: 50vh;
+
+}
+
+.iconos{
+    background-color: #7510F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.iconos img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    
+    
+}
+
+
+@media screen and (min-width: 800px){
+
+    .logo{
+        margin-left: 250px;
+    }
+
+    nav{
+        height: 100px;
+        
+
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+
+    }
+    .nav-menu li a{
+        font: 12px;
+
+    }
+    .banner-text h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text h2{
+
+        font-size: 20px;
+
+    }
+   
+    
+        
+    }
+    @media (max-width: 450px){
+        .banner-text div{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .buttons a{
+            margin: 0 5px 20px 0  ;
+        }
+     
+
+    }
+
+    @media (max-width: 650px){
+
+        .iconos{
+            flex-direction: column;
+        }
+        .h2-hola{
+
+            font-size: 25px
+        }
+        .h2-estudio{
+
+            font-size: 20px;
+        }
+    }
+
+    
+      
