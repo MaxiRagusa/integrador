@@ -115,7 +115,6 @@ nav{
 
 .section1{
     width: 100%;
-    height: 100vh;
     background-color: #7510F7;
   
 }
@@ -189,6 +188,116 @@ nav{
     
 }
 
+.clientes{
+    text-align: center;
+    padding-top: 70px;
+    background-color: #E0E0DD;
+    padding-bottom: 70px;
+}
+
+.clientes h2{
+    margin-bottom: 150px;
+    font-size: 3rem;
+    font-family: fantasy;
+}
+
+.div-clientes{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.div-clientes img{
+    width: 300px;
+    height: 300px;
+    border: black solid 2px;
+    border-radius: 20px;
+}
+.divdeldiv{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 65%;
+    margin-top: 50px;
+    border: rgb(119, 11, 11) solid 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divdeldiv h3{
+    width: 30%;
+}
+.div-clientes img:hover{
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #473d35;
+    -webkit-box-shadow: 0px 0px 15px 15px #4b3f37;
+    
+    }
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #090D0C;
+}
+.grupo-1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+
+}
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box figure img{
+    width: 250px;
+}
+.box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.box p{
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #0C1E30;
+    text-align: center;
+    transition: all 200ms ease;
+}
+.red-social a:hover{
+    color:rgb(17, 230, 230) ;
+}
+.grupo-2{
+    background-color: #0C1E30;
+    padding: 15px 10px;
+    text-align: center;
+    color: #efefef;
+}
+.grupo-2 small{
+    font-size: 15px;
+
+}
+
+
 
 @media screen and (min-width: 800px){
 
@@ -242,6 +351,7 @@ nav{
     
         
     }
+
     @media (max-width: 450px){
         .banner-text div{
             width: 100%;
@@ -262,7 +372,9 @@ nav{
 
         .iconos{
             flex-direction: column;
+            width: 100%;
         }
+        
         .h2-hola{
 
             font-size: 25px
@@ -271,7 +383,24 @@ nav{
 
             font-size: 20px;
         }
+        .divdeldiv{
+            width: 80%;
+        }
+        .divdeldiv h3{
+            display: none;   
+        }
+        .divdeldiv img{
+            width: 250px;
+            height: 250px;
+        }
+
     }
 
-    
-      
+    @media (max-width: 800px){
+        .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            padding: 35px 0px;
+    }
+    }
